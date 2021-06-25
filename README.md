@@ -2,8 +2,8 @@
 Em desenvolvimento...
 
     Esse aqui é meu primeiro "Projeto" em python, entao espero
-    que goste! Fiz 100% em python e espero sempre melhorar e
-    aprimora-lo... =)
+    que goste! Estou fazendo em 100% python e espero sempre melhorar
+    e aprimora-lo... =)
 
 
 O que é Calculator?
