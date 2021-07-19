@@ -14,4 +14,4 @@ O que é Calculator?
     treinando a sua matematica basica!
 
 
-Ass: @wesley.brenoo
+Ass: wesley breno
