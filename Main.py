@@ -27,7 +27,41 @@ Escolha: """))
             pular(30)
         else:
             if escolha == 1:    # Escolheu iniciar o jogo (Pendente).
-                print('iniciou')
+                while True:
+                    pular(30)
+                    print(f'\033[31;1m{"Dificuldades":^50}\033[m')
+                    pular(2)
+                    try:
+                        dificuldade = int(input("""Digite o numero de uma das opções abaixo;
+                    
+                    
+1 \033[1;31m➤\033[m Facil
+
+2 \033[1;31m➤\033[m Normal (recomendado)
+
+3 \033[1;31m➤\033[m Dificil
+
+
+4 \033[1;31m➤\033[m \033[;1mVoltar\033[m
+
+
+
+Escolha: """))
+                    except:
+                        erro(msg='Digite um dos valores\ninformados na tela.')
+                        pular(30)
+                    else:
+                        if dificuldade == 1:
+                            calculo(1)
+                        elif dificuldade == 2:  # (pendente)
+                            pass
+                        elif dificuldade == 3:  # (pendente)
+                            pass
+                        elif dificuldade == 4:
+                            break
+                        else:
+                            erro(msg='Digite um dos valores\ninformados na tela.')
+                            pular(30)
             elif escolha == 2:  # Escolheu mostrar as informacoes do jogo.
                 pular(30)
                 print(f'\033[;1m{"Informacões":^50}\033[m')
