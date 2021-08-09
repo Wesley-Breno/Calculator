@@ -29,20 +29,22 @@ Escolha: """))
             if escolha == 1:    # Escolheu iniciar o jogo (Pendente).
                 while True:
                     pular(30)
-                    print(f'\033[31;1m{"Dificuldades":^50}\033[m')
+                    print(f'\033[31;1m{"Modos":^50}\033[m')
                     pular(2)
                     try:
-                        dificuldade = int(input("""Digite o numero de uma das opções abaixo;
+                        modo = int(input("""Digite o numero de uma das opções abaixo;
                     
                     
-1 \033[1;31m➤\033[m Facil
+1 \033[1;31m➤\033[m Soma
 
-2 \033[1;31m➤\033[m Normal (recomendado)
+2 \033[1;31m➤\033[m Subtracao
 
-3 \033[1;31m➤\033[m Dificil
+3 \033[1;31m➤\033[m Multiplicacao
+
+4 \033[1;31m➤\033[m Divisao
 
 
-4 \033[1;31m➤\033[m \033[;1mVoltar\033[m
+5 \033[1;31m➤\033[m \033[;1mVoltar\033[m
 
 
 
@@ -51,13 +53,167 @@ Escolha: """))
                         erro(msg='Digite um dos valores\ninformados na tela.')
                         pular(30)
                     else:
-                        if dificuldade == 1:
-                            calculo(1)
-                        elif dificuldade == 2:  # (pendente)
-                            pass
-                        elif dificuldade == 3:  # (pendente)
-                            pass
-                        elif dificuldade == 4:
+                        if modo == 1:    # (pendente)
+                            while True:
+                                pular(30)
+                                print(f'\033[1;31m{"Dificuldades":^50}\033[m')
+                                pular(2)
+                                try:
+                                    dificuldade = int(input("""Digite o numero de uma das opcoes abaixo;
+                                    
+                                    
+1 \033[1;31m➤\033[m Facil
+
+2 \033[1;31m➤\033[m Normal (recomendado)
+
+3 \033[1;31m➤\033[m Dificil
+
+4 \033[1;31m➤\033[m Desafie-me
+
+
+5 \033[1;31m➤\033[m \033[;1mVoltar\033[m
+
+
+
+Escolha: """))
+                                except:
+                                    erro(msg='Digite um dos valores\ninformados na tela.')
+                                    pular(30)
+                                else:
+                                    if dificuldade == 1:
+                                        calculo(1, 1)
+                                    elif dificuldade == 2:
+                                        calculo(1, 2)
+                                    elif dificuldade == 3:
+                                        calculo(1, 3)
+                                    elif dificuldade == 4:
+                                        calculo(1, 4)
+                                    elif dificuldade == 5:
+                                        break
+                                    else:
+                                        erro(msg='Digite um dos valores\ninformados na tela.')
+                                        pular(30)
+                        elif modo == 2:  # (pendente)
+                            while True:
+                                pular(30)
+                                print(f'\033[1;31m{"Dificuldades":^50}\033[m')
+                                pular(2)
+                                try:
+                                    dificuldade = int(input("""Digite o numero de uma das opcoes abaixo;
+
+
+1 \033[1;31m➤\033[m Facil
+
+2 \033[1;31m➤\033[m Normal (recomendado)
+
+3 \033[1;31m➤\033[m Dificil
+
+4 \033[1;31m➤\033[m Desafie-me
+
+
+5 \033[1;31m➤\033[m \033[;1mVoltar\033[m
+
+
+
+Escolha: """))
+                                except:
+                                    erro(msg='Digite um dos valores\ninformados na tela.')
+                                    pular(30)
+                                else:
+                                    if dificuldade == 1:
+                                        calculo(2, 1)
+                                    elif dificuldade == 2:
+                                        calculo(2, 2)
+                                    elif dificuldade == 3:
+                                        calculo(2, 3)
+                                    elif dificuldade == 4:
+                                        calculo(2, 4)
+                                    elif dificuldade == 5:
+                                        break
+                                    else:
+                                        erro(msg='Digite um dos valores\ninformados na tela.')
+                                        pular(30)
+                        elif modo == 3:  # (pendente)
+                            while True:
+                                pular(30)
+                                print(f'\033[1;31m{"Dificuldades":^50}\033[m')
+                                pular(2)
+                                try:
+                                    dificuldade = int(input("""Digite o numero de uma das opcoes abaixo;
+
+
+1 \033[1;31m➤\033[m Facil
+
+2 \033[1;31m➤\033[m Normal (recomendado)
+
+3 \033[1;31m➤\033[m Dificil
+
+4 \033[1;31m➤\033[m Desafie-me
+
+
+5 \033[1;31m➤\033[m \033[;1mVoltar\033[m
+
+
+
+Escolha: """))
+                                except:
+                                    erro(msg='Digite um dos valores\ninformados na tela.')
+                                    pular(30)
+                                else:
+                                    if dificuldade == 1:
+                                        calculo(3, 1)
+                                    elif dificuldade == 2:
+                                        calculo(3, 2)
+                                    elif dificuldade == 3:
+                                        calculo(3, 3)
+                                    elif dificuldade == 4:
+                                        calculo(3, 4)
+                                    elif dificuldade == 5:
+                                        break
+                                    else:
+                                        erro(msg='Digite um dos valores\ninformados na tela.')
+                                        pular(30)
+                        elif modo == 4:  # (pendente)
+                            while True:
+                                pular(30)
+                                print(f'\033[1;31m{"Dificuldades":^50}\033[m')
+                                pular(2)
+                                try:
+                                    dificuldade = int(input("""Digite o numero de uma das opcoes abaixo;
+
+
+1 \033[1;31m➤\033[m Facil
+
+2 \033[1;31m➤\033[m Normal (recomendado)
+
+3 \033[1;31m➤\033[m Dificil
+
+4 \033[1;31m➤\033[m Desafie-me
+
+
+5 \033[1;31m➤\033[m \033[;1mVoltar\033[m
+
+
+
+Escolha: """))
+                                except:
+                                    erro(msg='Digite um dos valores\ninformados na tela.')
+                                    pular(30)
+                                else:
+                                    if dificuldade == 1:
+                                        calculo(4, 1)
+                                    elif dificuldade == 2:
+                                        calculo(4, 2)
+                                    elif dificuldade == 3:
+                                        calculo(4, 3)
+                                    elif dificuldade == 4:
+                                        calculo(4, 4)
+                                    elif dificuldade == 5:
+                                        break
+                                    else:
+                                        erro(msg='Digite um dos valores\ninformados na tela.')
+                                        pular(30)
+                        elif modo == 5:
                             break
                         else:
                             erro(msg='Digite um dos valores\ninformados na tela.')
@@ -70,7 +226,7 @@ Escolha: """))
     É um jogo educacional para treinar sua matematica basica.
             
 \033[1;31m▰\033[m Modos
-    Soma, Subtracão e Divisão.
+    Soma, Subtracão, Multiplicação e Divisão.
     
 \033[1;31m▰\033[m Em breve novas atualizacões.""")
                 press_enter(c=1, msg='voltar')
